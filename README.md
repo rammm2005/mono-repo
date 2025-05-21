@@ -1,6 +1,11 @@
 # Monorepo
 
-Monorepo ini berisi aplikasi web dan admin dashboard untuk project, beserta paket bersama seperti UI components, konfigurasi, dan utilitas. Struktur ini memudahkan pengelolaan kode dalam satu repository terpusat.
+![pnpm](https://img.shields.io/badge/pnpm-workspaces-yellow?style=flat-square&logo=pnpm)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat-square&logo=typescript)
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)
+![PayloadCMS](https://img.shields.io/badge/Payload-Backend-red?style=flat-square&logo=payloadcms)
+
+> Monorepo ini berisi aplikasi **web publik** dan **admin dashboard**, beserta **paket bersama** seperti UI components, konfigurasi, dan utilitas. Dengan struktur ini, pengembangan lintas platform menjadi lebih terorganisir dan efisien.
 
 ---
 
@@ -44,7 +49,9 @@ pnpm install
 ```
 
 #### Setup Envoriment Variable
+
 Buat file .env di root dan di masing-masing app (apps/web/.env, apps/backend/.env, dll). Contoh:
+
 ```
 # apps/backend/.env
 DATABASE_URL=postgres://user:pass@localhost:5432/travel
@@ -59,9 +66,10 @@ NEXT_PUBLIC_API_URL=http://localhost:3001/api
 
 ```
 
-
 #### 📦 Scripts
+
 Semua perintah dijalankan dari root monorepo menggunakan pnpm.
+
 ```
 # Jalankan web app
 pnpm --filter web dev
@@ -77,6 +85,7 @@ pnpm lint
 ```
 
 ### 🧪 Unit Testing
+
 ```
 pnpm test
 
